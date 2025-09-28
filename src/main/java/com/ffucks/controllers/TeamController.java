@@ -24,4 +24,9 @@ public class TeamController {
     public List<Team> list() {
         return service.list();
     }
+
+    @GetMapping
+    public Team getName() {
+        return service.list().get(0);
+    }
 }
